@@ -51,4 +51,4 @@ Salomón Oyarzún participó como Coordinador de Business Readiness, documentand
 ## Nota
 
 Este repositorio omite información sensible. Los nombres de sistemas y empresas han sido adaptados por motivos de confidencialidad.
-# Frontend de Ventas (TELCO, 2011–2012)
+
