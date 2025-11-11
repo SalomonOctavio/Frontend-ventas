@@ -1,13 +1,12 @@
 flowchart TD
 INI["Inicio: Venta en tienda"] --> PORT["Consulta portabilidad (NPG)"]
 PORT --> CRED["Check crediticio"]
-CRED --> FORM["Registro cliente y contrato"]
+CRED --> FORM["Creación cliente y contrato"]
 FORM --> INV["Consulta de inventario (Oracle EBS INV)"]
 FORM --> FACT["Asignación de plan y facturación (Oracle AR)"]
 FORM --> POS["Pago en POS (Oracle POS)"]
-FORM --> ROBOT["Creación diferida en Siebel (robot)"]
-POS --> FIN["Fin del proceso: Cliente activo"]
-ROBOT --> FIN
+POS --> ROBOT["Creación diferida en Siebel (robot)"]
+ROBOT --> FIN["Fin del proceso: Cliente activo"]
 
 classDef sistemas fill:#f9f9f9,stroke:#ccc,color:#333;
 class PORT,CRED,INV,FACT,POS,ROBOT sistemas;
